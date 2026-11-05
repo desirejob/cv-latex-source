@@ -1,0 +1,294 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=darkblue]{hyperref}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{fontawesome5}
+\usepackage{tikz}
+\usepackage{float}
+
+% Custom colors
+\definecolor{darkblue}{RGB}{0,0,139}
+\definecolor{headerbg}{RGB}{220,230,245}
+\definecolor{sectionbg}{RGB}{245,245,250}
+\definecolor{gradstart}{RGB}{180,200,245}
+\definecolor{gradend}{RGB}{220,230,255}
+
+
+\setlist[itemize]{nosep, leftmargin=*, topsep=2pt}
+\setlength{\parindent}{0pt}
+
+
+\newcommand{\cvsection}[2]{% #1 = icon, #2 = title
+	\vspace{0.4cm}
+	\begin{tcolorbox}[colback=gradstart!50!gradend, colframe=gradstart!50!gradend, boxrule=0pt, left=4pt, right=4pt, top=2pt, bottom=2pt]
+		\textbf{\color{darkblue} #1 \hspace{0.2cm} #2}
+	\end{tcolorbox}
+	\noindent\tikz{\draw[dashed, darkblue, thick] (0,0)--(\linewidth,0);}
+	\vspace{0.2cm}
+}
+
+\begin{document}
+	
+	% ------------------- Header -------------------
+	\begin{tcolorbox}[colback=headerbg, colframe=white, boxrule=0pt, left=6pt, right=6pt, top=6pt, bottom=6pt]
+		{\Huge \textbf{Desire Job Hayang}}
+		
+		\vspace{0.1cm}
+		%{\Large \textbf{BP: 608 Ngueme--Limbe \textbar{} Cameroon}}
+		%{\Large \textbf{Algebraic Geometry \textbar{} Differential Geometry}}
+		
+		\vspace{0.3cm}
+		
+		\normalsize
+		\faEnvelope \ \href{mailto:desire.hayang@aims-cameroon.org}{desire.hayang@aims-cameroon.org} \quad
+		\faPhone \ +237 695 900 562 \quad
+		\faLinkedin \ \href{https://www.linkedin.com/in/desirejobhayang}{LinkedIn} \quad
+		\faGithub \ \href{https://github.com/desirejob}{GitHub}
+		
+			 \href{https://orcid.org/0000-0002-XXXX-XXXX}{https://orcid.org/0000-0002-XXXX-XXXX}
+		
+	\end{tcolorbox}
+	
+	\vspace{0.5cm}
+	
+	% ------------------- Professional Profile -------------------
+	\cvsection{\faUserGraduate}{Professional Profile}
+	
+	
+	
+	Master’s graduate with two master’s degrees in Mathematics, with research backgrounds in algebraic geometry and combinatorics, and differential geometry. Strong foundation in mathematical reasoning, modelling, and problem-solving. Currently gaining hands-on experience in Data Science and AI through an internship at Quantum ARISE, contributing to ThermoFab, a scientific platform that applies data-driven and machine learning approaches to predict thermoelectric material properties. Developing practical skills in machine learning, scientific data analysis, computational modelling, databases, APIs, and software development. Combining mathematical expertise with computational experience to address complex scientific problems, with additional interests in DevOps engineering, design, and the development of intelligent and secure technological solutions.
+	
+
+%	
+	% ------------------- Areas of Expertise -------------------
+	\cvsection{\faLightbulb}{Areas of Expertise}
+	
+	\begin{minipage}[t]{0.48\textwidth}
+		\textbf{Professional Skills}
+		\begin{itemize}
+			\item Teamwork and ability to work under pressure
+			\item Scientific Problem Solving and Critical Thinking
+			\item Scientific Writing \& Academic Communication
+			\item Data Science \& AI
+			\item Design thinking
+			\item Software developer
+			\item Agile Development
+			\item Personal Development
+			\item Drafting of entrepreneurial projects
+			\item Mathematical Modeling
+			\item Differential Geometry \& Topology
+			\item Real Analysis \& Functional Analysis
+			\item Linear Algebra \& Abstract Algebra \& Set Theory
+			\item Numerical methods and PDEs
+			
+			
+		\end{itemize}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.48\textwidth}
+		\textbf{Technical Skills}
+		\begin{itemize}
+			\item \textbf{Programming Languages:} Python, JavaScript, SQL, CSS, R
+			\item \textbf{Data Science \& Machine Learning:} NumPy, SciPy, Pandas, Matplotlib, scikit-learn, PyTorch
+			\item \textbf{Maths Software:} LaTeX, SageMath
+			%\item \textbf{Numerical Methods:} PDE Solvers, Optimization Algorithms%, Cryptography
+			\item \textbf{Development \& DevOps:} Git, GitHub, VS Code, Linux, Docker
+		\end{itemize}
+	\end{minipage}
+	
+	
+	
+	% ------------------- Education -------------------
+	
+	\cvsection{\faGraduationCap}{Education}
+	
+	\textbf{MSc in Mathematics}  \hfill  \textit{August 2025 – June 2026}\\
+	African Institute for Mathematical Sciences (AIMS), Cmeroon\\
+	\textit{Mastercard Foundation Scholar} \\
+	\textbf{Research thesis:} Toric Fano varieties \\
+	\textit{Research area}: Algebraic Geometry and Combinatorics\\
+	
+	\textbf{MSc in Mathematics } \hfill \textit{ September 2026} \\
+	University of Ngaoundere, Cameroon \\
+	\textbf{Research thesis:} Prolongation of multiplicative Dirac structure related to Weil bundle \\
+	\textit{Research area: Differential Geometry}
+	\vspace{0.2cm}
+	
+	\textbf{BSc Mathematics} \hfill\textit{August 2021}\\
+	University of Ngaoundere, Cameroon \\
+	Pure Mathematics
+	
+	\vspace{0.2cm}
+	
+	%\textbf{Baccalaureate Series "C"} \\
+	%High School of Gangassaou, Cameroon | \textit{2017 – 2018}	
+	
+	% ------------------- Experience -------------------
+	\cvsection{\faBriefcase}{Professional Experience}
+	
+%	\textbf{Research Intern} \\
+%	\textbf{AIMS Cameroon, Limbe} \\
+%	\textit{August 2025 – November 2025}
+%	\begin{itemize}
+%		\item Worked on introductory problems in Riemannian geometry and manifold theory.
+%		\item Implemented numerical experiments in Python to visualize geometric structures.
+%		\item Solved advanced problem sets in analysis, algebra, and applied mathematics.
+%	\end{itemize}
+	
+	\vspace{0.2cm}
+	
+		\textbf{Intern, Quantum ARISE} \\
+	\textbf{Lom\'e, Togo} \\
+	%\textit{August 2026 -- January 2027}
+	
+	\begin{itemize}
+		\item Contributing to the development of \textbf{ThermoFab}, a scientific platform for predicting thermoelectric material properties using data-driven and machine learning approaches.
+		
+		\item Working with \textbf{scientific data, machine learning models, computational methods, databases, and APIs} to support reliable prediction workflows and scientific analysis.
+		
+		\item Gaining hands-on experience in \textbf{Python, scientific computing, data processing, software development, and AI-driven scientific applications}.
+	\end{itemize}
+	
+		\vspace{0.2cm}
+	
+	\textbf{Teaching/Academic Support Volunteer} \\
+	\textbf{University of Ngaoundere} \\
+	\textit{November 2024 – March 2025}
+	\begin{itemize}
+		\item Assisted undergraduate students with exercises in calculus, algebra, and topology.
+		\item Created clear explanations to reinforce mathematical intuition and rigor.
+		\item Helped students develop structured approaches to complex problems.
+	\end{itemize}
+	
+	\vspace{0.2cm}
+	
+	\textbf{Tutoring and Review Sessions} \\
+	\textbf{Secondary High School, Gangassaou} \\
+	\textit{November 2019 - June 2021} and \textit{December 2023 - May 2024}
+	\begin{itemize}
+		\item Assisted learners with exercises in calculus, algebra, and arithmetic.
+		\item Created clear explanations to reinforce mathematical intuition and rigor.
+		\item Helped learners develop structured approaches to complex problems.
+		\item Prepared students for official examinations.
+	\end{itemize}
+	
+	\vspace{0.2cm}
+	
+	\textbf{Talk at AIMS-Cameroon} \\
+	\textit{November 2025}
+	\begin{itemize}
+		\item Presentation on the complexity of numbers $\pi$ and $e$
+		\item Demonstration of the irrationality and transcendence of the number $e$
+		\item Demonstration of the transcendence of irrationality using Niven's approach (1947) for the number $\pi$
+		\item Presentation on the importance of numbers pi and e in real life
+	\end{itemize}
+	
+	\vspace{0.2cm}
+	
+	\textbf{End-of-Course Presentations} \\
+	\textbf{AIMS-Cameroon} \\
+	\textit{November 2025 - April 2026}
+	\begin{itemize}
+		
+		\item Presentation on Ring, Group and Coding Theory and Cryptography
+		\item Final course presentation on Applied Algebraic Geometry
+		\item Presentation on Mathematical Problem Solving
+		\item Final course presentation on Machine Learning and AI
+		\item Presentation on R and Python programming languages
+		\item Report on Actuarial Mathematics and Risks
+		\item Debate on AI and Preservation of African Values
+		\item Presentation on Numerical Methods for PDEs and Computational Fluid
+	\end{itemize}
+	
+	\vspace{0.2cm}
+
+	\textbf{BOOTCAMP AIMS-Cameroon} \\
+	\textit{June - July 2026}
+	\begin{itemize}
+	\item Design thinking session
+	\item Power BI session
+	\item Introduction to JavaScript
+	\end{itemize}
+	
+	% ------------------- Projects -------------------
+	\cvsection{\faProjectDiagram}{Projects}
+	
+%	\textbf{Numerical Simulation of Simpson and Trapezoidal Methods (2025)}
+%	\begin{itemize}
+%		\item Implementation of Simpson and trapezoidal methods to approximate area.
+%		\item Evaluation of these two methods.
+%		\item Graphical representation of numerical values of these methods using Matplotlib, Python, SageMath
+%		\item Calculation of numerical errors using Python and Matplotlib
+%	\end{itemize}
+%	
+%	\textbf{Study Notes in Algebra and Geometry (2024)}
+%	\begin{itemize}
+%		\item Compilation of structured notes on linear algebra
+%		\item Compilation of notes on categories and functors
+%		\item Notes on Lie groupoid-algebroids and Poisson structures
+%		\item Compilation of notes on multiplicative Dirac structures.
+%	\end{itemize}
+	
+	\textbf{AlloDoc (2025)}
+	\begin{itemize}
+		\item Creation of an online service for medical assistance
+		\item Creation of a professional network with top doctors
+		\item Participation in reducing disease rates through technological tools
+	\end{itemize}
+\textbf{Multi-Vendor E-Commerce Marketplace}
+\begin{itemize}
+	\item Implement Role-Based Access Control (RBAC)
+	\item Streamline Product Management
+	\item Unified Shopping Experience
+	\item Deliver a Functional MVP
+\end{itemize}
+	
+	% ------------------- References -------------------
+	\cvsection{\faAddressBook}{References}
+	
+%	
+%	\textbf{Pr. Anne-Sophie Kaloghiros}\\
+%	%Lecturer of Mathematics\\
+%	Brunel University \\
+%	Email: \normalsize
+%	\faEnvelope \ \href{mailto:anne-sophie.kaloghiros@brunel.ac.uk}{anne-sophie.kaloghiros@brunel.ac.uk}
+%	
+%	\textbf{Dr. Wankap Nono}\\
+%	Lecturer of Mathematics\\
+%	 University of Ngaoundere Cameroon \\
+%		Email: \normalsize
+%	\faEnvelope \ \href{mailto:georgywan@yahoo.fr}{georgywan@yahoo.fr}
+%	
+%	\vspace{0.4cm}
+%	
+%	\textbf{Dr. Daniel Duviol Tcheutia}\\
+%	Academic Director\\ African Institute for Mathematical Sciences (AIMS) Cameroon\\
+%	Email: \normalsize
+%	\faEnvelope \ \href{mailto:daniel.tcheutia@aims-cameroon.org}{daniel.tcheutia@aims-cameroon.org}
+Available upon request.
+	
+
+
+% ------------------- References -------------------
+%\cvsection{\faAddressBook}{Passport}
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.592\linewidth]{passport_desire_job_hayang}
+%	%\caption{}
+%	\label{fig:passportdesirejobhayang}
+%\end{figure}
+
+
+
+
+	\end{document}
